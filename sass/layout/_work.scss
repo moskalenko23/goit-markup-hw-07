@@ -1,0 +1,43 @@
+.pictures-section {
+  text-align: center;
+  padding-bottom: 94px;
+}
+
+.pictures-title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  line-height: calc(42 / 36);
+}
+
+.pictures-list {
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
+}
+
+.pictures-list-item {
+  margin-left: 30px;
+  position: relative;
+}
+
+.pictures-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.pictures-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--alternative-color);
+}

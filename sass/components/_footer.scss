@@ -21,11 +21,10 @@
   color: var(--alternative-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-logo-second:hover,
-.footer-logo-second:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address {
@@ -41,21 +40,21 @@
   color: var(--alternative-color);
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-}
-.footer-link-address:hover,
-.footer-link-address:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.footer-list-item + .footer-list-item {
-  margin-top: 10px;
-}
 .footer-list-item {
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  & + & {
+    margin-top: 10px;
+  }
 }
 .footer-link {
   font-style: normal;
@@ -64,10 +63,10 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-right {
@@ -102,20 +101,18 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-social-item {
   width: 44px;
   height: 44px;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .footer-social-icon {

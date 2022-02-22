@@ -16,10 +16,9 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-}
-
-.form-field + .form-field {
-  margin-top: 10px;
+  & + & {
+    margin-top: 10px;
+  }
 }
 
 .modal-lable-name {
@@ -39,11 +38,10 @@
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
-
-.input-style:hover,
-.input-style:focus {
-  border: 1px solid #2196f3;
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
 }
 
 .form-icon-position {
@@ -58,11 +56,10 @@
   height: 18px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-style:hover + .modal-icon,
-.input-style:focus + .modal-icon {
-  fill: var(--accent-color);
+  .input-style:hover + &,
+  .input-style:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-textarea {
@@ -82,12 +79,11 @@
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
-
-.modal-textarea:hover,
-.modal-textarea:focus {
-  border: 1px solid #2196f3;
-  color: var(--title-color);
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    color: var(--title-color);
+  }
 }
 
 .policy-lable {
@@ -109,11 +105,6 @@
   overflow: hidden;
 }
 
-.checkbox:checked + .policy-icon {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-}
-
 .policy-icon {
   display: flex;
   justify-content: center;
@@ -121,6 +112,10 @@
   border: 2px solid #212121;
   border-radius: 4px;
   fill: #fff;
+  .checkbox:checked + & {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .checkbox-text {
@@ -139,7 +134,6 @@
 
 .backdrop {
   position: fixed;
-
   left: 0;
   top: 0;
   width: 100%;
@@ -153,10 +147,9 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .modal {
@@ -189,11 +182,10 @@
   width: 16px;
   height: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-icon:hover,
-.close-icon:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .submit-btn {
@@ -211,9 +203,8 @@
   background-color: var(--accent-color);
   border-radius: 4px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.submit-btn:hover,
-.submit-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
